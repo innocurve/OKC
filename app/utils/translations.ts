@@ -41,10 +41,10 @@ export const translations: TranslationDictionary = {
     zh: '价值观',
   },
   valuesDescription: {
-    ko: '우리는\n격동과 변혁의 시대\n한가운데에 서 있습니다.',
-    en: 'We stand\nin the midst of an era\nof turbulence and transformation.',
-    ja: '私たちは\n激動と変革の時代の\n真っ只中にいます。',
-    zh: '我们正处于\n变革与动荡时代的\n中心。',
+    ko: 'AI로\n더 나은 삶을 만들고\n인연을 소중히',
+    en: 'Creating better lives\nwith AI and\nvaluing relationships',
+    ja: 'AIで\nより良い人生を創り\n縁を大切に',
+    zh: '用AI\n创造更好的生活\n珍惜缘分',
   },
   history: {
     ko: '연혁',
@@ -59,16 +59,16 @@ export const translations: TranslationDictionary = {
     zh: '项目',
   },
   name: {
-    ko: '정이노',
-    en: 'Jeong Ino',
-    ja: 'イノ',
-    zh: 'Jeong Ino',
+    ko: '오경찬',
+    en: 'Kyungchan Oh',
+    ja: '吳烱燦',
+    zh: '吳烱燦',
   },
   title: {
-    ko: '이노카드 템플릿 · 기업인',
-    en: 'InnoCard Template · Entrepreneur',
-    ja: 'イノカードテンプレート · 企業家',
-    zh: 'InnoCard模板·企业家',
+    ko: 'Financial Planner|사단법인 부본부장',
+    en: 'Financial Planner|Vice Director of Non-Profit Organization',
+    ja: 'ファイナンシャルプランナー|社団法人副本部長',
+    zh: '理财规划师|社团法人副本部长',
   },
   birth: {
     ko: '출생',
@@ -77,10 +77,10 @@ export const translations: TranslationDictionary = {
     zh: '出生',
   },
   birthDate: {
-    ko: '2006년 1월 1일',
-    en: 'January 1, 2006',
-    ja: '2006年1月1日',
-    zh: '2006年1月1日',
+    ko: '1998년 5월 14일',
+    en: 'May 14, 1998',
+    ja: '1998年5月14日',
+    zh: '1998年5月14日',
   },
   affiliation: {
     ko: '소속',
@@ -89,22 +89,10 @@ export const translations: TranslationDictionary = {
     zh: '隶属',
   },
   affiliationDescription: {
-    ko: '이노카드 템플릿',
-    en: 'InnoCard Template',
-    ja: 'イノカードテンプレート',
-    zh: 'InnoCard模板',
-  },
-  education: {
-    ko: '학력',
-    en: 'Education',
-    ja: '学歴',
-    zh: '教育',
-  },
-  educationDescription: {
-    ko: '한국대학교 컴퓨터공학과 학사',
-    en: "Korea University, Bachelor of Computer Science",
-    ja: '韓国大学 コンピュータサイエンス学部 学士',
-    zh: '韩国大学 计算机科学与工程学院 学士',
+    ko: '메리츠 RCM본부 2본부 3지점 FP\n(사)대한청년을세계로 대전본부 부본부장\n새마을 대덕구청년미래연대 부회장',
+    en: 'Financial Planner, Meritz RCM Division 2 Branch 3\nVice Director, Korea Youth to the World Association Daejeon Branch\nVice Chairman, Saemaul Daedeok-gu Youth Future Alliance',
+    ja: 'メリッツRCM本部第2本部第3支店 FP\n(社)大韓青年を世界へ大田本部副本部長\nセマウル大徳区青年未来連帯副会長',
+    zh: '美利兹RCM本部第2本部第3支店 理财规划师\n(社)韩国青年走向世界大田本部副本部长\n新村大德区青年未来联合副会长',
   },
   field: {
     ko: '분야',
@@ -113,10 +101,10 @@ export const translations: TranslationDictionary = {
     zh: '领域',
   },
   fieldDescription: {
-    ko: 'AI, 마케팅, 커뮤니케이션',
-    en: 'AI, Marketing, Communication',
-    ja: 'AI、マーケティング、コミュニケーション',
-    zh: 'AI，营销，沟通',
+    ko: 'AI, 보험, 청년',
+    en: 'AI, Insurance, Youth',
+    ja: 'AI、保険、青年',
+    zh: 'AI，保险，青年',
   },
   mbti: {
     ko: 'MBTI',
@@ -125,10 +113,10 @@ export const translations: TranslationDictionary = {
     zh: 'MBTI',
   },
   mbtiType: {
-    ko: 'ENTJ',
-    en: 'ENTJ',
-    ja: 'ENTJ',
-    zh: 'ENTJ',
+    ko: 'ESTJ',
+    en: 'ESTJ',
+    ja: 'ESTJ',
+    zh: 'ESTJ',
   },
   contact: {
     ko: '문의',
@@ -221,10 +209,10 @@ export const translations: TranslationDictionary = {
     zh: '问候视频',
   },
   innoCardInquiry: {
-    ko: 'InnoCard\n문의',
-    en: 'InnoCard\nInquiry',
-    ja: 'InnoCard\nお問い合わせ',
-    zh: 'InnoCard\n咨询',
+    ko: '문의',
+    en: 'Inquiry',
+    ja: 'お問い合わせ',
+    zh: '咨询',
   },
   contactOptions: {
     ko: '연락하기',
@@ -317,16 +305,16 @@ export const translations: TranslationDictionary = {
     zh: '返回',
   },
   initialGreeting: {
-    ko: '안녕하세요! 저는 정이노입니다. 무엇을 도와드릴까요?',
-    en: 'Hello! I am Jeong Inno. How can I help you?',
-    ja: 'こんにちは！イノと申します。何かお手伝いできることはありますか？',
-    zh: '你好！我是Jeong Inno。我能为您做些什么？'
+    ko: '안녕하세요! 저는 오경찬입니다. 무엇을 도와드릴까요?',
+    en: 'Hello! I am Kyungchan Oh. How can I help you?',
+    ja: 'こんにちは！吳烱燦と申します。何かお手伝いできることはありますか？',
+    zh: '你好！我是吳烱燦。我能为您做些什么？'
   },
   cloneGreeting: {
-    ko: "안녕하세요! 저는 정이노's Clone입니다. 무엇을 도와드릴까요?",
-    en: "Hello! I'm Jeong Inno's Clone. How can I help you?",
-    ja: "こんにちは！イノのクローンです。どのようにお手伝いできますか？",
-    zh: "你好！我是Jeong Inno的克隆。我能为您做些什么？"
+    ko: "안녕하세요! 저는 오경찬's Clone입니다. 무엇을 도와드릴까요?",
+    en: "Hello! I'm Kyungchan Oh's Clone. How can I help you?",
+    ja: "こんにちは！吳烱燦のクローンです。どのようにお手伝いできますか？",
+    zh: "你好！我是吳烱燦的克隆。我能为您做些什么？"
   },
   formEmail: {
     ko: '이메일',
@@ -341,22 +329,34 @@ export const translations: TranslationDictionary = {
     zh: '请输入电子邮件',
   },
   greetingScript: {
-    ko: '안녕하세요!\n저는 이노카드 템플릿용으로 특별히 제작된 이노입니다.\n\n오늘 여러분께 인사드리게 되어 정말 기쁩니다.\n이 영상은 저희의 인사 영상 예시 자료로,\n이노카드 템플릿이 어떻게 여러분의 메시지를 멋지게\n전달할 수 있는지 보여드리기 위해 준비되었습니다.\n\n함께 새로운 경험을 시작해 보시길 바랍니다.\n감사합니다.',
-    en: 'nice to meet you!\nI am Inno, specially created for the InoCard template.\n\nI\'m delighted to greet you today.\nThis video serves as a sample for our greeting video,\ndemonstrating how the InoCard template\ncan beautifully convey your message.\n\nI hope you\'ll join us in experiencing something new.\nThank you!',
-    ja: 'こんにちは！\n私はイノカードのテンプレート用に特別に作られたイノです\n\n今日\n皆さんにご挨拶できることをとても嬉しく思います。\nこの動画は、イノカードのテンプレートがどのようにあなたのメッセージを美しく伝えることができるかを示すための挨拶動画のサンプルです。\n\nぜひ、新しい体験を一緒に始めてみましょう。\nありがとうございます',
-    zh: '你好！\n我是为 InnoCard 模板特别制作的 Ino。\n\n今天很高兴能向大家问好。\n这段视频是我们的问候视频示例，\n展示 InnoCard 模板如何优雅地传达您的信息。\n\n希望您能与我们一起开启新的体验。\n谢谢！'
+    ko: '안녕하세요.\n저는 보험과 AI를 결합해 맞춤형 솔루션을 제공하는 보험 전문가이자, 새마을운동 청년대표 수석부회장으로 함께 성장하는 사회를 만들기 위해 노력하는 오경찬입니다.\n\n빠르게 변화하는 시대 속에서 AI를 활용한 더 정확하고 효율적인 보험 컨설팅을 제공합니다. 고객님의 상황을 분석하고, 꼭 필요한 정보를 제공하며, 실질적인 혜택을 드리는 강력한 도구가 되어드리겠습니다.\n\n보험이 고민될 때, 언제든지 편하게 문의하세요.\nAI와 함께 고객님께 꼭 맞는 솔루션을 찾아드리겠습니다.\n\n보험과 AI를 통해 현실적인 가치를 창출하고, 나눔과 배려가 있는 사회를 만드는 데 앞장서겠습니다.\n\n앞으로도 함께 성장하는 전문가가 되겠습니다.\n감사합니다. ',
+    en: 'nice to meet you!\nI am Kyungchan Oh, an insurance expert who integrates AI to provide personalized solutions and the Senior Vice President of the Saemaul Movement Youth Association, striving to create a society where we grow together.\n\nIn this rapidly changing era, I offer more accurate and efficient insurance consulting using AI.\nI analyze your situation, provide only the necessary information, and deliver real benefits through a powerful tool tailored to you.\n\nIf you ever have concerns about insurance, feel free to reach out anytime.\nWith AI, I will help you find the best solution that suits your needs.\n\nThrough insurance and AI, I aim to create real-world value and lead efforts to build a society rooted in sharing and compassion.\n\nI will continue to grow as a dedicated expert.\nThank you.',
+    ja: 'こんにちは。\n私はAIと保険を組み合わせて、最適なソリューションを提供する保険専門家であり、セマウル運動青年代表の上級副会長として、共に成長する社会の実現に努めているオ・ギョンチャンです。\n\n急速に変化する時代の中で、AIを活用した、より正確で効率的な保険コンサルティングを提供しています。\nお客様の状況を分析し、必要な情報だけをお届けし、実質的なメリットを提供する強力なツールとなります。\n\n保険についてお悩みの際は、いつでもお気軽にご相談ください。\nAIと共に、お客様に最適なソリューションをご提案いたします。\n\n保険とAIを通じて、現実的な価値を創出し、思いやりと分かち合いのある社会を築くために尽力してまいります。\n\n今後とも成長し続ける専門家でありたいと思います。\nありがとうございます。',
+    zh: '您好，\n我是欧京灿，一名将保险与人工智能结合，为客户提供个性化解决方案的保险专家，同时担任新村运动青年代表副会长，致力于打造一个共同成长的社会。\n\n在这个快速变化的时代，我提供基于AI的更精准、高效的保险咨询。\n我将分析您的情况，提供必要的信息，并通过强大的工具为您带来实际的收益。\n\n如果您对保险有任何疑问，欢迎随时咨询。\n我将借助AI，帮助您找到最适合的解决方案。\n\n通过保险和人工智能，我希望创造现实价值，并积极推动一个充满关怀与分享的社会。\n我将不断成长，成为更加专业的保险顾问。\n谢谢！'
   },
   affiliations_1: {
+    ko: '메리츠 RCM본부 2본부 3지점',
+    en: 'Meritz RCM Division 2 Branch 3',
+    ja: 'メリッツRCM本部第2本部第3支店',
+    zh: '美利兹RCM本部第2本部第3支店'
+  },
+  affiliations_2: {
     ko: '이노커브',
     en: 'InnoCurve',
     ja: 'イノカーブ',
     zh: 'InnoCurve'
   },
-  affiliations_2: {
-    ko: '추가 소속 기관',
-    en: 'Additional Affiliation',
-    ja: '追加所属',
-    zh: '附加隶属'
+  affiliations_3: {
+    ko: '(사)대한청년을세계로',
+    en: 'Korean Youth to the World',
+    ja: '(社)韓国青年を世界へ',
+    zh: '(社)韩国青年走向世界'
+  },
+  affiliations_4: {
+    ko: '새마을 대덕구청년미래연대',
+    en: 'Saemaul Daedeok-gu Youth Future Alliance',
+    ja: 'セマウル大徳区青年未来連帯会',
+    zh: '新村大德区青年未来联盟'
   },
   linkCopied: {
     ko: '링크가 복사되었습니다',

@@ -14,34 +14,34 @@ const MyValues: React.FC<MyValuesProps> = ({ language }) => {
   const content = {
     ko: [
       translate('valuesDescription', language),
-      "이곳에 가치관이나 메시지를 작성하실 수 있습니다. 위에 작성한 비전 및 목표에 대한 내용을 자유롭게 입력하세요.",
-      "예시",
-      "특히 인공지능은 우리의 일상과 산업 전반에 걸쳐 커다란 변화를 이끌며 미래를 재정의하고 있습니다. 하지만 이러한 변화가 과연 모든 이에게 공평하게 다가가고 있는지, 그 과정을 되돌아볼 필요가 있습니다.",
-      "저희는 기술의 장벽을 낮추고, 누구나 인공지능을 통해 더 나은 삶을 누릴 수 있도록 돕는 데 최선을 다하고자 합니다. 교육과 소통을 통해 더 많은 사람들이 기술을 이해하고 활용할 수 있도록 지원하며, 모두가 함께 성장할 수 있는 포용적 환경을 만들어 나가겠습니다.",
+      "세상은 빠르게 변화하고 있지만, 모든 변화가 사람들에게 실질적인 도움이 되는 것은 아닙니다. 저는 작은 만남이라도 소중히 여기며, 인공지능을 활용해 현실적인 가치를 제공하는 것이 중요하다고 생각합니다.",
+      "AI는 단순한 기술이 아니라, 어려움을 겪는 사람들에게 해결책을 제시하고, 개인과 사회가 함께 성장할 수 있도록 돕는 도구가 되어야 합니다. 누구나 쉽게 접근하고 활용할 수 있도록 장벽을 낮추고, 이를 통해 더 많은 사람들이 혜택을 누릴 수 있어야 합니다.",
+      "저는 AI와 보험을 결합하여 맞춤형 솔루션을 제공하고, 고객이 필요할 때 가장 적절한 정보를 전달하며, 지속적인 관리로 더 나은 선택을 돕고자 합니다. 기술을 활용해 실질적인 가치를 창출하고, 모두가 성장할 수 있는 환경을 만들어가는 것이 저의 목표입니다.",
+      "변화하는 시대 속에서도 끊임없이 배우고 혁신하며, 지식과 경험을 나누고 공유하는 것이 진정한 발전이라 믿습니다. 함께 성장하는 사회를 만들기 위해, 오늘도 최선을 다하겠습니다.",
       "감사합니다."
     ],
     en: [
       translate('valuesDescription', language),
-      "You can write your values or message here. Feel free to enter content about the vision and goals written above.",
-      "Example",
-      "Particularly, artificial intelligence is leading major changes across our daily lives and industries, redefining our future. However, we need to look back and consider whether these changes are truly reaching everyone equally.",
-      "We are committed to lowering technological barriers and doing our best to help everyone enjoy a better life through artificial intelligence. Through education and communication, we will support more people in understanding and utilizing technology, creating an inclusive environment where everyone can grow together.",
+      "While the world is rapidly changing, not all changes bring practical benefits to people. I believe in valuing every encounter, no matter how small, and providing practical value through artificial intelligence.",
+      "AI is not just a technology; it should be a tool that provides solutions to people facing difficulties and helps both individuals and society grow together. We need to lower barriers so that everyone can easily access and utilize it, allowing more people to benefit.",
+      "By combining AI with insurance, I aim to provide customized solutions, deliver the most appropriate information when clients need it, and help make better choices through continuous management. My goal is to create real value through technology and build an environment where everyone can grow.",
+      "Even in these changing times, I believe true progress comes from continuous learning, innovation, and sharing knowledge and experience. I will do my best every day to create a society where we can grow together.",
       "Thank you."
     ],
     ja: [
       translate('valuesDescription', language),
-      "ここに価値観やメッセージを記入できます。上記に記載したビジョンや目標に関する内容を自由に入力してください。",
-      "例",
-      "特に人工知能は私たちの日常生活と産業全般にわたって大きな変化をもたらし、未来を再定義しています。しかし、これらの変化が本当にすべての人に平等に届いているのか、そのプロセスを振り返る必要があります。",
-      "私たちは技術の障壁を低くし、誰もが人工知能を通じてより良い生活を送れるよう支援することに最善を尽くします。教育とコミュニケーションを通じて、より多くの人々が技術を理解し活用できるよう支援し、皆が共に成長できる包括的な環境を作り上げていきます。",
+      "世界は急速に変化していますが、すべての変化が人々に実質的な助けとなるわけではありません。私は小さな出会いも大切にし、人工知能を活用して現実的な価値を提供することが重要だと考えています。",
+      "AIは単なる技術ではなく、困難を抱える人々に解決策を提示し、個人と社会が共に成長できるよう支援するツールでなければなりません。誰もが簡単にアクセスし活用できるよう障壁を下げ、より多くの人々が恩恵を受けられるようにする必要があります。",
+      "私はAIと保険を組み合わせてカスタマイズされたソリューションを提供し、お客様が必要とする時に最適な情報を届け、継続的な管理でより良い選択をサポートしていきます。技術を活用して実質的な価値を創出し、皆が成長できる環境を作ることが私の目標です。",
+      "変化する時代の中でも、絶え間なく学び革新し、知識と経験を共有することが真の発展だと信じています。共に成長する社会を作るため、今日も最善を尽くしてまいります。",
       "ありがとうございます。"
     ],
     zh: [
       translate('valuesDescription', language),
-      "您可以在此填写您的价值观或信息。请自由输入上述愿景和目标相关的内容。",
-      "示例",
-      "特别是人工智能正在引领我们的日常生活和产业全领域的重大变革，重新定义我们的未来。然而，我们需要反思这些变化是否真正平等地惠及每个人。",
-      "我们致力于降低技术壁垒，尽最大努力帮助每个人通过人工智能获得更好的生活。通过教育和沟通，我们将支持更多人理解和利用技术，创造一个包容的环境，让每个人都能共同成长。",
+      "世界正在快速变化，但并非所有的变化都能为人们带来实际帮助。我认为重视每一次相遇，无论多么微小，并通过人工智能提供实际价值都很重要。",
+      "AI不仅仅是一项技术，它应该成为为困难中的人们提供解决方案，帮助个人和社会共同成长的工具。我们需要降低门槛，让每个人都能轻松访问和使用它，使更多人受益。",
+      "我的目标是通过将AI与保险相结合，提供定制化解决方案，在客户需要时传递最恰当的信息，并通过持续管理帮助做出更好的选择。利用技术创造实际价值，打造一个人人都能成长的环境。",
+      "即使在这个变革的时代，我也相信不断学习、创新、分享知识和经验才是真正的进步。为了创造一个共同成长的社会，今天我也将继续努力。",
       "谢谢。"
     ]
   }

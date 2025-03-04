@@ -29,6 +29,28 @@ const [posts, setPosts] = useState<PostData[]>([
   { 
     id: 1, 
     title: {
+      ko: '메리츠 화재',
+      en: 'Meritz Fire & Marine Insurance',
+      ja: 'メリッツ火災海上保険',
+      zh: '美利车险',
+    },
+    image: '/postimage/id1image.png',
+    description: {
+      ko: 'AI 기반 고객맞춤형 보험 컨설팅을 제공합니다. 고객의 상황을 정확하게 분석하고 최적의 보험 상품을 설계하여, 불필요한 보장을 줄이고 실질적인 혜택을 극대화할 수 있도록 도와드리겠습니다. 빠르게 변화하는 금융 환경 속에서 더 스마트하고 효율적인 보험 솔루션을 제시해드립니다.',
+      en: 'We offer AI-based personalized insurance consulting services. We analyze your situation accurately and design the best insurance products, minimizing unnecessary coverage and maximizing practical benefits. We will help you in the rapidly changing financial environment with smarter and more efficient insurance solutions.',
+      ja: 'AIベースの顧客マッチング型保険相談サービスを提供します。お客様の状況を正確に分析し、最適な保険商品を設計し、不要な保険を減らし、実践的な利点を最大化することを支援します。急速に変化する金融環境で、よりスマートで効率的な保険ソリューションをご提案します。',
+      zh: '我们提供基于AI的客户匹配型保险咨询服务。我们准确分析您的状况，设计最佳保险产品，减少不必要的保险，最大化实际利益。在快速变化的金融环境中，我们提供更智能和高效的保险解决方案。',
+    },
+    tags: {
+      ko: ['#메리츠화재', '#AI', '#고객맞춤', '#보험컨설팅'],
+      en: ['#Meritz', '#AI', '#Customer-Centric', '#InsuranceConsulting'],
+      ja: ['#Meritz', '#AI', '#顧客マッチング', '#金融環境'],
+      zh: ['#Meritz', '#AI', '#客户匹配', '#保险咨询']
+    }
+  },
+  { 
+    id: 2, 
+    title: {
       ko: '(사)대한청년을세계로\n미래전략포럼 개최',
       en: 'Future Strategy Forum held by\nKorean Youth to the World Association',
       ja: '(社)大韓青年を世界へ\n未来戦略フォーラム開催',
@@ -49,79 +71,25 @@ const [posts, setPosts] = useState<PostData[]>([
     }
   },
   { 
-    id: 2, 
-    title: {
-      ko: '이노커브 InnoCard',
-      en: 'Innocurve InnoCard',
-      ja: 'イノカーブ InnoCard',
-      zh: 'InnoCurve InnoCard',
-    },
-    image: '/og-image.png',
-    description: {
-      ko: '종이 명함을 넘어 자신만의 웹사이트로 나를 표현하고, 연결하며, 확장할 수 있는 AI 전자명함 서비스를 소개합니다. 당신의 이야기를 담고, 네트워크를 스마트하게 이어주는 디지털 공간을 만나보세요.',
-      en: 'Introducing AI digital business cards that go beyond paper, allowing you to express, connect, and expand through your own website. Discover a digital space that holds your story and smartly connects your network.',
-      ja: '紙の名刺を超え、自分だけのウェブサイトで自己表現、つながり、拡張できるAIデジタル名刺サービスをご紹介します。あなたのストーリーを込め、ネットワークをスマートにつなぐデジタル空間をご体験ください。',
-      zh: '介绍一款超越纸质名片的AI电子名片服务，您可以通过自己的网站来表达、连接和扩展自己。探索一个承载您的故事并智能连接您的网络的数字空间。',
-    },
-    tags: {
-      ko: ['#전자명함', '#개인브랜딩', '#네트워크확장', '#AI솔루션'],
-      en: ['#DigitalCard', '#PersonalBranding', '#NetworkExpansion', '#AISolution'],
-      ja: ['#デジタル名刺', '#個人ブランディング', '#ネットワーク拡張', '#AIソリューション'],
-      zh: ['#电子名片', '#个人品牌', '#网络扩展', '#AI解决方案']
-    }
-  },
-  { 
     id: 3, 
     title: {
-      ko: '이노커브 AIConnect',
-      en: 'Innocurve AIConnect',
-      ja: 'イノカーブ AIConnect',
-      zh: 'InnoCurve AIConnect',
+      ko: '새마을 대덕구청년미래연대',
+      en: 'Daedeok-gu Youth Future Alliance',
+      ja: '大徳区青年未来連帯会',
+      zh: '大德区青年未来联盟',
     },
-    image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/INNOCURVE-UEJ6P4SmjI6dvCbd6jXEsOFWMdMjqW.png',
+    image: '/postimage/id3image.png',
     description: {
-      ko: '기술 발전의 혜택을 누구나 누릴 수 있도록, 각 산업별 맞춤형 AI 컨설팅과 최적화된 솔루션을 제공합니다.',
-      en: 'We provide customized AI consulting and optimized solutions for each industry to ensure everyone can enjoy the benefits of technological advancement.',
-      ja: '技術発展の恩恵を誰もが享受できるよう、各産業別にカスタマイズされたAIコンサルティングと最適化されたソリューションを提供します。',
-      zh: '我们为各个行业提供定制的AI咨询和优化的解决方案，以确保每个人都能享受到技术进步的益处。',
+      ko: '새마을 대덕구청년미래연대는 청년들의 성장과 지역 사회 발전을 위해 활동하는 단체입니다. 다양한 봉사와 네트워킹을 통해 공동체 의식을 함양하고, 청년들의 역량 강화를 지원하며, 지속 가능한 지역 발전을 위한 다양한 프로젝트를 진행하고 있습니다.',
+      en: 'Daedeok-gu Youth Future Alliance is an organization that works for the growth of young people and the development of the local community. Through various volunteer activities and networking, we foster community awareness, support youth capacity building, and conduct various projects for sustainable local development.',
+      ja: '大徳区青年未来連帯会は、若者の成長と地域社会の発展のために活動する団体です。様々なボランティア活動とネットワーキングを通じて、コミュニティ意識を育み、若者の能力向上を支援し、持続可能な地域発展のための様々なプロジェクトを推進しています。',
+      zh: '大德区青年未来联盟是一个致力于青年成长和地区社会发展的组织。通过各种志愿服务和社交活动，培养社区意识，支持青年能力建设，并开展各种可持续地区发展项目。',
     },
     tags: {
-      ko: ['#AI컨설팅', '#맞춤형솔루션', '#기술혁신', '#산업최적화'],
-      en: ['#AIConsulting', '#CustomSolutions', '#TechInnovation', '#IndustryOptimization'],
-      ja: ['#AIコンサルティング', '#カスタマイズソリューション', '#技術革新', '#産業最適化'],
-      zh: ['#AI咨询', '#定制解决方案', '#技术创新', '#产业优化']
-    }
-  },
-  { 
-    id: 4, 
-    title: {
-      ko: '이노커브 마케팅',
-      en: 'Innocurve Marketing',
-      ja: 'イノカーブマーケティング',
-      zh: 'InnoCurve营销',
-    },
-    image: '/postimage/id4image.png',
-    images: [
-      '/postimage/id4image2.png',
-      '/postimage/id4image3.png',
-      '/postimage/id4image4.png',
-      '/postimage/id4image5.png',
-      '/postimage/id4image6.png',
-      '/postimage/id4image7.png',
-      '/postimage/id4image8.png',
-      '/postimage/id4image9.png'
-    ],
-    description: {
-      ko: 'AI를 활용한 홈페이지, 이미지, 영상 등 다양한 디지털 콘텐츠 제작을 통해 비용은 효율적으로 절감하고, 최상의 퀄리티로 효과적인 홍보를 지원합니다.',
-      en: 'We support effective promotion with top quality while efficiently reducing costs through the production of various digital content such as AI-powered websites, images, and videos.',
-      ja: 'AIを活用したホームページ、画像、動画など、さまざまなデジタルコンテンツの制作を通じてコストを効率的に削減し、最高の品質で効果的なプロモーションをサポートします。',
-      zh: '通过制作AI驱动的网站、图像和视频等各种数字内容，有效降低成本，并以最高质量支持有效的推广。',
-    },
-    tags: {
-      ko: ['#AI마케팅', '#디지털콘텐츠', '#비용효율화', '#퀄리티향상'],
-      en: ['#AIMarketing', '#DigitalContent', '#CostEfficiency', '#QualityImprovement'],
-      ja: ['#AIマーケティング', '#デジタルコンテンツ', '#コスト効率化', '#品質向上'],
-      zh: ['#AI营销', '#数字内容', '#成本效率', '#质量提升']
+      ko: ['#청년성장', '#지역발전', '#봉사활동', '#네트워킹'],
+      en: ['#YouthGrowth', '#LocalDevelopment', '#Volunteering', '#Networking'],
+      ja: ['#青年成長', '#地域発展', '#ボランティア', '#ネットワーキング'],
+      zh: ['#青年成长', '#地区发展', '#志愿服务', '#社交网络']
     }
   }
 ]);
@@ -316,11 +284,6 @@ return (
                     className="text-center"
                   />
                   <ProfileItem 
-                    label={translate('education', language)} 
-                    value={translate('educationDescription', language).split('\n')} 
-                    className="text-center"
-                  />
-                  <ProfileItem 
                     label={translate('field', language)} 
                     value={[translate('fieldDescription', language)]} 
                     className="text-center"
@@ -357,7 +320,7 @@ return (
       <div className="w-full overflow-x-hidden">
         <FadeInSection>
           <section id="community" className="py-16">
-            <div className="container mx-auto px-4">
+            <div className="container mx-auto">
               <Swiper
                 modules={[Navigation, Pagination, Autoplay]}
                 spaceBetween={20}
@@ -385,16 +348,16 @@ return (
                     spaceBetween: 20,
                   }
                 }}
-                className="swiper-container !pb-12"
+                className="swiper-container !pb-12 !px-8"
               >
                 {posts.map((post) => (
                   <SwiperSlide 
                     key={post.id}
-                    className="h-[340px]"
+                    className="h-[340px] p-2"
                   >
                     <div
                       onClick={() => handlePostClick(post.id)}
-                      className="bg-white dark:bg-gray-800 rounded-lg shadow-md dark:shadow-gray-900/30 cursor-pointer transform transition-all duration-300 hover:scale-105 h-[340px] flex flex-col border border-gray-100 dark:border-gray-700"
+                      className="bg-white dark:bg-gray-800 rounded-lg shadow-md dark:shadow-gray-900/30 cursor-pointer transform transition-all duration-300 hover:scale-105 h-[340px] flex flex-col border border-gray-100 dark:border-gray-700 origin-center hover:z-10"
                     >
                       <div className="relative h-[200px] rounded-t-lg overflow-hidden bg-gray-50 dark:bg-gray-700 flex items-center justify-center">
                         <Image
@@ -451,11 +414,11 @@ return (
             <h3 className="font-bold text-lg mb-4">{translate('contact', language)}</h3>
             <div className="flex items-center space-x-2 mb-2">
               <Mail className="w-5 h-5" />
-              <p>admin@inno-curve.com</p>
+              <p>zhrpxk0514@naver.com</p>
             </div>
             <div className="flex items-center space-x-2">
               <Phone className="w-5 h-5" />
-              <p>010-1234-5678</p>
+              <p>010-9984-9308</p>
             </div>
           </div>
           <div>
@@ -464,17 +427,16 @@ return (
               <p className="block text-white">
                 {translate('affiliations_1', language)}
               </p>
-              <p>{translate('affiliations_2', language)}</p>
+              <p>{translate('affiliations_3', language)}</p>
+              <p>{translate('affiliations_4', language)}</p>
             </div>
           </div>
           <div>
             <h3 className="font-bold text-lg mb-4">{translate('socialMedia', language)}</h3>
             <div className="space-y-2">
-              <Link href="https://www.instagram.com/inno_curve/" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2 hover:text-blue-400 transition duration-300">
+              <Link href="https://www.instagram.com/o_ooookc/" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2 hover:text-blue-400 transition duration-300">
                 <span>Instagram</span>
               </Link>
-              <p className="text-white">Naver</p>
-              <p className="text-white">Facebook</p>
             </div>
           </div>
         </div>

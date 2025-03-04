@@ -19,70 +19,42 @@ export default function Career() {
   const fullHistory: HistoryByLanguage = useMemo(() => ({
     ko: {
       "2025": [
-        "추가 예정"
+        "(사)대한청년을세계로 대전본부 부본부장"
       ],
       "2024": [
-        "추가 예정"
-      ],
-      "2023": [
-        "추가 예정"
-      ],
-      "2022": [
-        "추가 예정"
-      ],
-      "2021": [
-        "추가 예정"
+        "메리츠 기네스 달성(신인 3등)",
+        "새마을 대덕구청년미래연대 부회장",
+        "메리츠 RCM본부 2본부 3지점 입사"
       ]
     },
     en: {
       "2025": [
-        "추가 예정"
+        "Vice Director, Korea Youth to the World Association Daejeon Branch"
       ],
       "2024": [
-        "추가 예정"
-      ],
-      "2023": [
-        "추가 예정"
-      ],
-      "2022": [
-        "추가 예정"
-      ],
-      "2021": [
-        "추가 예정"
+        "Meritz Guinness Achievement (Newcomer 3rd place)",
+        "Vice Chairman, Saemaul Daedeok-gu Youth Future Alliance",
+        "Meritz RCM Division 2 Branch 3 Joined"
       ]
     },
     ja: {
       "2025": [
-        "추가 예정"
+        "(社)大韓青年を世界へ 大田本部 副本部長"
       ],
       "2024": [
-        "추가 예정"
-      ],
-      "2023": [
-        "추가 예정"
-      ],
-      "2022": [
-        "추가 예정"
-      ],
-      "2021": [
-        "추가 예정"
+        "メリッツギネス達成 (新人3位)",
+        "セマウル大徳区青年未来連帯副会長",
+        "メリッツRCM第2本部第3支店 入社"
       ]
     },
     zh: {
       "2025": [
-        "추가 예정"
+        "(社)大韓青年を世界へ 大田本部 副本部長"
       ],
       "2024": [
-        "추가 예정"
-      ],
-      "2023": [
-        "추가 예정"
-      ],
-      "2022": [
-        "추가 예정"
-      ],
-      "2021": [
-        "추가 예정"
+        "メリッツギネス達成 (新人3位)",
+        "セマウル大徳区青年未来連帯副会長",
+        "メリッツRCM第2本部第3支店 入社"
       ]
     }
   }), [])
@@ -129,7 +101,7 @@ export default function Career() {
           </div>
         ))}
       </div>
-      <div className="flex justify-center mt-6">
+      <div className="flex justify-center mt-6 hidden">
         <SophisticatedButton 
           expanded={isExpanded} 
           onClick={() => setIsExpanded(!isExpanded)} 
