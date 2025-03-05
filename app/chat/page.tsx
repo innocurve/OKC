@@ -33,6 +33,31 @@ export default function ChatPage() {
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const [pdfContent, setPdfContent] = useState<string | null>(null);
   const fileInputRef = useRef<HTMLInputElement>(null);
+  const [isLoading, setIsLoading] = useState(false);
+
+  // CSS 스타일 추가
+  const thinkingDotsStyle = `
+    @keyframes blink {
+      0% { opacity: .2; }
+      20% { opacity: 1; }
+      100% { opacity: .2; }
+    }
+    .thinking-dots {
+      display: flex;
+      align-items: center;
+      gap: 2px;
+    }
+    .thinking-dots span {
+      animation-name: blink;
+      animation-duration: 1.4s;
+      animation-iteration-count: infinite;
+      animation-fill-mode: both;
+      font-size: 40px;
+      line-height: 20px;
+    }
+    .thinking-dots span:nth-child(2) { animation-delay: .2s; }
+    .thinking-dots span:nth-child(3) { animation-delay: .4s; }
+  `;
 
   // localStorage에서 메시지 불러오기
   useEffect(() => {
@@ -84,6 +109,7 @@ export default function ChatPage() {
     }
     const updatedMessages = [...messages, userMessage]
     setMessages(updatedMessages)
+    setIsLoading(true);
 
     try {
       const response = await fetch('/api/chat', {
@@ -124,6 +150,8 @@ export default function ChatPage() {
         id: crypto.randomUUID()
       };
       setMessages(prev => [...prev, errorMessage])
+    } finally {
+      setIsLoading(false);
     }
   }
 
@@ -221,6 +249,7 @@ export default function ChatPage() {
 
   return (
     <div className="min-h-screen bg-white dark:bg-gray-900 flex flex-col">
+      <style>{thinkingDotsStyle}</style>
       <div className="fixed top-0 left-0 right-0 z-50 border-b border-gray-200 dark:border-gray-700 bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm">
         <Navigation language={language} />
       </div>
@@ -255,6 +284,27 @@ export default function ChatPage() {
             >
               <WaveformIcon className="w-5 h-5 text-gray-600 dark:text-gray-300" />
             </Link>
+            <Link
+              href="/insurance-chat"
+              className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800"
+              aria-label="Insurance Chat"
+              title="보험 상담"
+            >
+              <svg
+                className="w-5 h-5 text-gray-600 dark:text-gray-300"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                />
+              </svg>
+            </Link>
             <button
               onClick={clearMessages}
               className={`p-2 rounded-full ${
@@ -282,6 +332,17 @@ export default function ChatPage() {
             {messages.map((message, index) => (
               <ChatMessage key={getMessageKey(message, index)} message={message} />
             ))}
+            {isLoading && (
+              <div className="flex justify-start items-start">
+                <div className="rounded-2xl px-4 py-2.5 bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-gray-100">
+                  <div className="thinking-dots">
+                    <span>·</span>
+                    <span>·</span>
+                    <span>·</span>
+                  </div>
+                </div>
+              </div>
+            )}
             <div ref={messagesEndRef} />
           </div>
         </div>

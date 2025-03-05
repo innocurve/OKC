@@ -27,6 +27,88 @@ export type VoiceChatDescriptions = {
   };
 };
 
+// 보험 상담 관련 타입과 번역
+export interface InsuranceChatTranslation {
+  title: string;
+  placeholder: string;
+  description: string;
+  loading: string;
+  error: string;
+  examples: {
+    title: string;
+    questions: string[];
+  };
+}
+
+export const insuranceTranslations: {
+  [lang in Language]: InsuranceChatTranslation;
+} = {
+  ko: {
+    title: '보험 상담 챗봇',
+    placeholder: '보험 관련 질문을 입력해주세요',
+    description: '보험 약관에 대해 궁금한 점을 물어보세요',
+    loading: '답변 생성 중...',
+    error: '죄송합니다. 답변 생성 중 오류가 발생했습니다',
+    examples: {
+      title: '질문 예시',
+      questions: [
+        '실손의료비 보장 범위가 어떻게 되나요?',
+        '보험금 청구 절차를 알려주세요',
+        '보험 가입 조건은 무엇인가요?',
+        '보험료 납입 방법은 어떻게 되나요?'
+      ]
+    }
+  },
+  en: {
+    title: 'Insurance Consultation Chatbot',
+    placeholder: 'Ask questions about insurance policies',
+    description: 'Ask any questions about insurance terms and conditions',
+    loading: 'Generating answer...',
+    error: 'Sorry, an error occurred while generating the answer',
+    examples: {
+      title: 'Example Questions',
+      questions: [
+        'What is the coverage for medical expenses?',
+        'How do I claim insurance?',
+        'What are the conditions for insurance subscription?',
+        'How can I pay the insurance premium?'
+      ]
+    }
+  },
+  ja: {
+    title: '保険相談チャットボット',
+    placeholder: '保険に関する質問を入力してください',
+    description: '保険約款について気になることを質問してください',
+    loading: '回答を生成中...',
+    error: '申し訳ありません。回答の生成中にエラーが発生しました',
+    examples: {
+      title: '質問例',
+      questions: [
+        '実損医療費の保障範囲はどうなっていますか？',
+        '保険金請求の手続きを教えてください',
+        '保険加入の条件は何ですか？',
+        '保険料の納付方法を教えてください'
+      ]
+    }
+  },
+  zh: {
+    title: '保险咨询聊天机器人',
+    placeholder: '请输入保险相关问题',
+    description: '请询问关于保险条款的任何问题',
+    loading: '正在生成回答...',
+    error: '抱歉，生成回答时发生错误',
+    examples: {
+      title: '示例问题',
+      questions: [
+        '实损医疗费的保障范围是怎样的？',
+        '请告诉我保险金的申请程序',
+        '投保条件是什么？',
+        '如何缴纳保险费？'
+      ]
+    }
+  }
+};
+
 export const translations: TranslationDictionary = {
   profile: {
     ko: '프로필',
@@ -468,6 +550,11 @@ export function translateVoiceChat(key: VoiceChatDescriptionKey, lang: Language)
     console.error(`Voice chat translation error for key: ${key}, language: ${lang}`, error);
     return key;
   }
+}
+
+// 보험 상담 관련 번역 함수
+export function getInsuranceTranslation(lang: Language): InsuranceChatTranslation {
+  return insuranceTranslations[lang] || insuranceTranslations['ko'];
 }
 
 export function translate(key: TranslationKey, lang: Language): string {
