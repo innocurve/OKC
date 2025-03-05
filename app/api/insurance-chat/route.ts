@@ -108,32 +108,69 @@ ${section.content}
 
     // 3. GPT 모델을 통한 응답 생성
     console.log('GPT 요청 시작...');
-    const response = await openai.chat.completions.create({
-      model: "gpt-4-1106-preview",
-      messages: [
-        { role: "system", content: systemPrompt },
-        ...messages.slice(-3)  // 최근 3개 메시지만 포함하도록 수정
-      ],
-      temperature: 0.7,
-      max_tokens: 800,        // 토큰 수 조정
-      presence_penalty: 0.1,  // 반복 감소
-      frequency_penalty: 0.1, // 반복 감소
-      response_format: { "type": "text" }  // 텍스트 형식으로 제한
-    });
+    try {
+      const response = await openai.chat.completions.create({
+        model: "gpt-4-1106-preview",
+        messages: [
+          { role: "system", content: systemPrompt },
+          ...messages.slice(-3)  // 최근 3개 메시지만 포함하도록 수정
+        ],
+        temperature: 0.7,
+        max_tokens: 800,        // 토큰 수 조정
+        presence_penalty: 0.1,  // 반복 감소
+        frequency_penalty: 0.1, // 반복 감소
+        response_format: { "type": "text" }  // 텍스트 형식으로 제한
+      });
 
-    const endTime = Date.now();
-    console.log(`응답 생성 시간: ${endTime - startTime}ms`);
-    console.log('=== 챗봇 처리 완료 ===\n');
+      const endTime = Date.now();
+      console.log(`응답 생성 시간: ${endTime - startTime}ms`);
+      console.log('=== 챗봇 처리 완료 ===\n');
 
-    return new Response(JSON.stringify({
-      role: "assistant",
-      content: response.choices[0].message.content
-    }));
+      if (!response.choices[0]?.message?.content) {
+        throw new Error('GPT 응답이 올바르지 않습니다.');
+      }
+
+      return new Response(
+        JSON.stringify({
+          role: "assistant",
+          content: response.choices[0].message.content
+        }),
+        {
+          headers: {
+            'Content-Type': 'application/json',
+          },
+        }
+      );
+
+    } catch (error) {
+      console.error('GPT 요청 오류:', error);
+      return new Response(
+        JSON.stringify({
+          role: "assistant",
+          content: "죄송합니다. 답변 생성 중 오류가 발생했습니다. 잠시 후 다시 시도해 주세요."
+        }),
+        {
+          status: 500,
+          headers: {
+            'Content-Type': 'application/json',
+          },
+        }
+      );
+    }
 
   } catch (error) {
     console.error('Error in chat route:', error);
-    return new Response(JSON.stringify({
-      error: '죄송합니다. 응답을 생성하는 중에 오류가 발생했습니다.'
-    }), { status: 500 });
+    return new Response(
+      JSON.stringify({
+        role: "assistant",
+        content: '죄송합니다. 응답을 생성하는 중에 오류가 발생했습니다.'
+      }),
+      {
+        status: 500,
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      }
+    );
   }
 } 
