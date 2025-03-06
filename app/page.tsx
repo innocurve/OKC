@@ -337,23 +337,26 @@ return (
                 breakpoints={{
                   0: {
                     slidesPerView: 1,
-                    spaceBetween: 10,
+                    spaceBetween: 0,
+                    centeredSlides: true,
                   },
                   640: {
                     slidesPerView: Math.min(2, posts.length),
                     spaceBetween: 20,
+                    centeredSlides: false,
                   },
                   1024: {
                     slidesPerView: Math.min(3, posts.length),
                     spaceBetween: 20,
+                    centeredSlides: false,
                   }
                 }}
-                className="swiper-container !pb-12 !px-8"
+                className="swiper-container !pb-12"
               >
                 {posts.map((post) => (
                   <SwiperSlide 
                     key={post.id}
-                    className="h-[340px] p-2"
+                    className="h-[340px] px-4 md:p-2"
                   >
                     <div
                       onClick={() => handlePostClick(post.id)}
