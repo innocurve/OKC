@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useRef, useEffect } from 'react'
-import { ArrowLeft, Trash2, ClipboardList, MessageCircle, Headset } from 'lucide-react'
+import { ArrowLeft, Trash2, Headset } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useLanguage } from '../hooks/useLanguage'
